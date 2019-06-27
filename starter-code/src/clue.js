@@ -110,21 +110,24 @@ function randomSelector(arr) {
     return arr[randomNumber]  
 }
 
+// Here we create the mystery Envelope.
+var mysteryEnvelope = [];
 
 function pickMistery () {
-    var mysteryEnvelope = [];
     mysteryEnvelope.push(randomSelector(charactersArray));
     mysteryEnvelope.push(randomSelector(weaponsArray));
     mysteryEnvelope.push(randomSelector(roomsArray));
     return mysteryEnvelope;
 }
 
-function revealMystery(arr) {
-    console.log(arr.name + " " + arr.last_name + "LAST NAME> killed Mr.Boddy using the <WEAPON> in the <PLACE>!!!!")
-
-}
 
 console.log(pickMistery());
+
+// Lets us reveal the mystery Envelope
+function revealMystery(arr) {
+    return console.log(arr[0].first_name + " " + arr[0].last_name + " killed Mr.Boddy using the" + arr[1].name  + " in the " + arr[2].name)
+}
+
 console.log(revealMystery(mysteryEnvelope));
 
 
