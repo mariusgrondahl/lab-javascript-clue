@@ -124,6 +124,7 @@ function pickMistery () {
 console.log(pickMistery());
 
 // Lets us reveal the mystery Envelope
+
 function revealMystery(arr) {
     return console.log(arr[0].first_name + " " + arr[0].last_name + " killed Mr.Boddy using the" + arr[1].name  + " in the " + arr[2].name)
 }
