@@ -124,12 +124,16 @@ function pickMistery () {
 console.log(pickMistery());
 
 // Lets us reveal the mystery Envelope
-
+let message = "";
 function revealMystery(arr) {
-    return console.log(arr[0].first_name + " " + arr[0].last_name + " killed Mr.Boddy using the" + arr[1].name  + " in the " + arr[2].name)
+    return console.log(arr[0].first_name.toUpperCase() + " " + arr[0].last_name.toUpperCase() + " killed Mr.Boddy using the " + arr[1].name.toUpperCase()  + " in the " + arr[2].name.toUpperCase());
 }
 
+
 console.log(revealMystery(mysteryEnvelope));
+
+
+document.getElementsByTagName("h1")[0].innerHTML = "Hiii class";
 
 
 
