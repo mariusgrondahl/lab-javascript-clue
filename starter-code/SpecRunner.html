@@ -5,19 +5,28 @@
   <title>Week1 - Clue</title>
 
   <!-- include source files here... -->
-  <script src="src/clue.js"></script>
 
   <!-- include spec files here... -->
   <!-- <script src="tests/ClueSpec.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="src/main.css">
 
 </head>
 
 <body>
   <div class="wrapper">
-  <div id="card">
-    <h1>Hello Clue</h1>
-    <button id="open">Open mustery envelope</button>
-  </div>
+    <div id="card">
+
+    </div>
+    <h1 id="name">Name of killer</h1>
+    <p id="story">
+      Lorem ipsum
+    </p>
+
+  <button type="button"  onclick="manipulateDom(mysteryEnvelope)"> Open mustery envelope</button>
 </div>
+
+<footer>
+    <script src="src/clue.js"></script>
+</footer>
 </body>
 </html>

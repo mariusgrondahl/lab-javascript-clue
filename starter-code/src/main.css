@@ -1,8 +1,45 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "open sans", Arial, Helvetica, sans-serif;
+    background: #2d2d2d;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5{
+    font-size: 2rem;
+}
+
+button{
+    z-index: 9999;
+}
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: url("https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg");
+    background-size: cover;
+
 
 }
 
-.card{
-
+#card h1{
+    text-align: center;
 }
+

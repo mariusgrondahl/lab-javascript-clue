@@ -129,12 +129,28 @@ function revealMystery(arr) {
     return console.log(arr[0].first_name.toUpperCase() + " " + arr[0].last_name.toUpperCase() + " killed Mr.Boddy using the " + arr[1].name.toUpperCase()  + " in the " + arr[2].name.toUpperCase());
 }
 
-
 console.log(revealMystery(mysteryEnvelope));
 
 
-document.getElementsByTagName("h1")[0].innerHTML = "Hiii class";
+// Her comes the DOM manipulation
+
+function manipulateDom (arr) {
+    document.getElementById("name").innerHTML = arr[0].first_name + " " + arr[0].last_name;
+    let card = document.getElementById("card");
+    let background = arr[0].image;
+    card.style.backgroundImage = `url(${background})`;
+
+    document.getElementById("story").innerHTML = arr[0].first_name + " " + arr[0].last_name + " killed Mr.Boddy using the " + arr[1].name  + " in the " + arr[2].name;
+}
+
+manipulateDom(mysteryEnvelope);
 
 
 
+
+function changeColor (color) {
+  bodyColor.style.backgroundColor = color; 
+}
+
+changeColor(yourColor);
 
